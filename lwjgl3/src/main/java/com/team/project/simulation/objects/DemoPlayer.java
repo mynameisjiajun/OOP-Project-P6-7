@@ -4,6 +4,10 @@ import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Gdx;
 import com.team.project.engine.entities.CollidableEntity;
 
+/**
+ * Player-controlled entity.
+ * Moves using WASD keys.
+ */
 public class DemoPlayer extends CollidableEntity {
     
     public DemoPlayer(float x, float y) {

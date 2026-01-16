@@ -2,6 +2,10 @@ package com.team.project.engine.entities;
 
 import com.badlogic.gdx.math.Rectangle;
 
+/**
+ * An entity that can collide with other CollidableEntities.
+ * Has rectangular bounds for collision detection.
+ */
 public class CollidableEntity extends BaseEntity {
     protected Rectangle bounds;
 

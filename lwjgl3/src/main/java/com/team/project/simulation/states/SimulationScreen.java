@@ -10,6 +10,10 @@ import com.team.project.simulation.objects.DemoPlayer;
 import com.team.project.simulation.objects.DemoEnemy;
 import com.team.project.simulation.objects.DemoWall;
 
+/**
+ * Main simulation screen where the demo game runs.
+ * Initializes entities and handles the game loop.
+ */
 public class SimulationScreen implements Screen {
     
     private EntityManager entityManager;

@@ -3,6 +3,10 @@ package com.team.project.engine.managers;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
+/**
+ * Manages input/output operations.
+ * Wraps SpriteBatch for rendering and provides input utilities.
+ */
 public class IOManager {
     private SpriteBatch batch;
 

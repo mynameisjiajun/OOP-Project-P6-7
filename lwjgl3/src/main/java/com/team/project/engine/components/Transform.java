@@ -1,5 +1,8 @@
 package com.team.project.engine.components;
 
+/**
+ * Component that holds position and rotation data.
+ */
 public class Transform {
     public float x;
     public float y;

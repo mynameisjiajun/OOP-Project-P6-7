@@ -2,6 +2,9 @@ package com.team.project.simulation.objects;
 
 import com.team.project.engine.entities.CollidableEntity;
 
+/**
+ * Enemy entity that chases a target.
+ */
 public class DemoEnemy extends CollidableEntity {
     private CollidableEntity target;
 

@@ -1,9 +1,12 @@
 package com.team.project.engine.entities;
 
-import com.badlogic.gdx.math.Vector2;
 import com.team.project.engine.components.Transform;
 import com.team.project.engine.components.SpriteData;
 
+/**
+ * Base class for all game entities.
+ * Provides position (Transform), sprite data, and a unique ID.
+ */
 public class BaseEntity {
     private static int nextId = 0;
     protected int id;

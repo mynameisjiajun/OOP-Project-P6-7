@@ -1,33 +1,48 @@
 # OOP Group Project P6-7
 
-A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
+A LibGDX-based game engine skeleton for the OOP module project.
 
-This project was generated with a template including simple application launchers and an `ApplicationAdapter` extension that draws libGDX logo.
+## Project Structure
 
-## Platforms
+```
+lwjgl3/src/main/java/com/team/project/
+├── engine/                       # Generic Engine (Reusable)
+│   ├── main/
+│   │   └── BaseEngine.java       # Main Game class
+│   ├── managers/
+│   │   ├── SceneManager.java     # Screen transitions
+│   │   ├── EntityManager.java    # Entity management
+│   │   ├── CollisionManager.java # Collision detection
+│   │   └── IOManager.java        # Rendering wrapper
+│   ├── entities/
+│   │   ├── BaseEntity.java       # Parent class
+│   │   └── CollidableEntity.java # Collidable entity
+│   └── components/
+│       ├── Transform.java        # Position data
+│       └── SpriteData.java       # Texture info
+│
+├── simulation/                   # Demo Implementation
+│   ├── states/
+│   │   └── SimulationScreen.java # Main game screen
+│   └── objects/
+│       ├── DemoPlayer.java       # WASD player
+│       ├── DemoEnemy.java        # Chase AI
+│       └── DemoWall.java         # Static obstacle
+│
+└── lwjgl3/                       # Desktop Launcher
+    ├── Lwjgl3Launcher.java       # Entry point
+    └── StartupHelper.java        # macOS support
+```
 
-- `core`: Main module with the application logic shared by all platforms.
-- `lwjgl3`: Primary desktop platform using LWJGL3; was called 'desktop' in older docs.
+## How to Run
 
-## Gradle
+1. Open in Eclipse/IntelliJ as a Gradle project
+2. Run `lwjgl3` module -> `Lwjgl3Launcher.java`
 
-This project uses [Gradle](https://gradle.org/) to manage dependencies.
-The Gradle wrapper was included, so you can run Gradle tasks using `gradlew.bat` or `./gradlew` commands.
-Useful Gradle tasks and flags:
+## Assets
 
-- `--continue`: when using this flag, errors will not stop the tasks from running.
-- `--daemon`: thanks to this flag, Gradle daemon will be used to run chosen tasks.
-- `--offline`: when using this flag, cached dependency archives will be used.
-- `--refresh-dependencies`: this flag forces validation of all dependencies. Useful for snapshot versions.
-- `build`: builds sources and archives of every project.
-- `cleanEclipse`: removes Eclipse project data.
-- `cleanIdea`: removes IntelliJ project data.
-- `clean`: removes `build` folders, which store compiled classes and built archives.
-- `eclipse`: generates Eclipse project data.
-- `idea`: generates IntelliJ project data.
-- `lwjgl3:jar`: builds application's runnable jar, which can be found at `lwjgl3/build/libs`.
-- `lwjgl3:run`: starts the application.
-- `test`: runs unit tests (if any).
+Place images and sounds in: `lwjgl3/src/main/resources/`
 
-Note that most tasks that are not specific to a single project can be run with `name:` prefix, where the `name` should be replaced with the ID of a specific project.
-For example, `core:clean` removes `build` folder only from the `core` project.
+## Team
+
+- Add your team members here

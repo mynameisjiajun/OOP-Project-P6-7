@@ -4,6 +4,10 @@ import java.util.List;
 import com.team.project.engine.entities.BaseEntity;
 import com.team.project.engine.entities.CollidableEntity;
 
+/**
+ * Handles collision detection between CollidableEntities.
+ * Uses simple O(N^2) overlap checking.
+ */
 public class CollisionManager {
     public void checkCollisions(List<BaseEntity> entities) {
         // Simple O(N^2) collision check

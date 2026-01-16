@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import com.team.project.engine.entities.BaseEntity;
 
+/**
+ * Manages all game entities.
+ * Handles entity registration and batch updates.
+ */
 public class EntityManager {
     private List<BaseEntity> entities;
 

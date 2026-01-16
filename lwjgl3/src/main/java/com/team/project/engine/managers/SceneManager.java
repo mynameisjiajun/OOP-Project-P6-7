@@ -2,6 +2,10 @@ package com.team.project.engine.managers;
 
 import com.badlogic.gdx.Screen;
 
+/**
+ * Manages screen/scene transitions.
+ * Provides abstraction over LibGDX screen switching.
+ */
 public class SceneManager {
     private com.badlogic.gdx.Game game;
 
