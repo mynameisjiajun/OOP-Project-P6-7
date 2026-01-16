@@ -1,0 +1,5 @@
+sourceSets.main.java.srcDirs = [ "src/" ]
+sourceSets.main.resources.srcDirs = ["../core/assets"]
+
+project.ext.mainClassName = "com.group.project.desktop.DesktopLauncher"
+eclipse.project.name = appName + "-desktop"
